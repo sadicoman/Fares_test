@@ -17,6 +17,10 @@
 	letter-spacing: 1.4px;
 	text-transform: uppercase;
 
+	&:hover {
+		background-color: #c9213f;
+	}
+
 	.icon {
 		color: #000;
 		font-family: Exo;
@@ -32,6 +36,10 @@
 		border: 1px solid #eeeeef;
 		background: #fff;
 		color: #303032;
+
+		&:hover {
+			background-color: #ece1e1;
+		}
 	}
 
 	&--troisieme {
@@ -45,6 +53,10 @@
 		line-height: 160%;
 		background: inherit;
 		padding: 10px 16px;
+
+		&:hover {
+			background-color: #ece1e1;
+		}
 	}
 
 	&--quatrieme {
@@ -52,6 +64,24 @@
 		font-weight: 300;
 		line-height: 160%;
 		padding: 10px 16px;
+	}
+
+	&--footer {
+		border-radius: 90px;
+		background: #575756;
+		color: #fff;
+		text-align: center;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.65px;
+		text-transform: uppercase;
+		align-items: center;
+
+		&:hover {
+			background-color: #5f5f5b;
+		}
 	}
 
 	&--blanc {

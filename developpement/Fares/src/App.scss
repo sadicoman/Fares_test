@@ -81,11 +81,136 @@
 			line-height: 180%; /* 32.4px */
 		}
 	}
+	&--actualites {
+		margin-bottom: 122px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+		overflow: hidden;
+
+		&::before {
+			content: url(assets/img/deco-actualites-2.svg);
+			display: block;
+			width: 300px;
+			// height: 115px;
+			position: absolute;
+			left: 0px;
+			z-index: -1;
+		}
+
+		&::after {
+			content: url(assets/img/deco-actualites.svg);
+			display: block;
+			width: 300px;
+			// height: 115px;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			z-index: -1;
+		}
+	}
 }
 .background {
 	&--poly {
 		background-image: url("assets/img/polygone.svg");
 		background-repeat: no-repeat;
 		background-position: top right;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.footer {
+		padding-top: 134px;
+		margin: auto;
+		max-width: 1280px;
+	}
+	.header__nav {
+		margin: inherit;
+	}
+	.section {
+		padding: 0px 112px;
+		max-width: 1280px;
+		margin: auto;
+		&--deco {
+			background-size: 100%;
+
+			p {
+				max-width: 681px;
+			}
+
+			.container {
+				flex-direction: row;
+				justify-content: space-evenly;
+				gap: 81px;
+			}
+		}
+
+		&--deco {
+			padding-top: 83px;
+		}
+
+		&--ressources {
+			align-items: inherit;
+			padding: 125px 168px;
+			height: 729px;
+			p {
+				width: 462px;
+			}
+			.resource-card-container {
+				flex-direction: row;
+				position: relative;
+			}
+			// .resource-card {
+
+			// }
+			.resource-card__content {
+				width: inherit;
+			}
+			.ResourceCard--bas {
+				top: 100px;
+				left: 550px;
+				position: absolute;
+			}
+		}
+
+		&--actualites {
+			align-items: inherit;
+			padding-top: 168px;
+
+			.title--niveau2 {
+				width: 532px;
+				font-size: 46px;
+			}
+			.actualites-card-container {
+				flex-direction: row;
+			}
+			.btn__fake--secondary {
+				align-self: center;
+			}
+		}
+	}
+	.footer {
+		.contact-social {
+			display: flex;
+			gap: 83px;
+		}
+		.legal-section {
+			ul {
+				display: flex;
+				gap: 5px;
+			}
+		}
+	}
+	.section--actualites::after {
+		bottom: -50px;
+		left: 0px;
+		width: inherit;
+	}
+	.section--actualites::before {
+		width: inherit;
+		right: 0px;
+		left: inherit;
+		bottom: 113px;
 	}
 }

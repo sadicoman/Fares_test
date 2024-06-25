@@ -1,0 +1,20 @@
+/* FakeButtonWithIconRight.scss */
+.fake-btn-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	color: #252526;
+	text-align: center;
+	font-family: Inter, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 160%; /* 25.6px */
+	text-decoration-line: underline;
+}
+
+.fake-btn-right .icon {
+	display: flex;
+	align-items: center;
+}

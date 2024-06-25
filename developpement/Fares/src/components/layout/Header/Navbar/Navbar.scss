@@ -71,13 +71,13 @@ body[data-menu] .menu {
 	.menu {
 		width: 100%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 	}
 	.menu__liste {
 		height: auto;
 		margin-top: 0;
 		display: flex;
-		gap: 24px;
+		gap: 32px;
 		align-items: center;
 		padding: 0;
 
@@ -99,12 +99,14 @@ body[data-menu] .menu {
 		}
 	}
 	.menu__lien {
-		color: var(--color-on-menu-text);
+		color: #303032;
 		font-size: 14px;
-		text-transform: inherit;
-		letter-spacing: 0;
-		display: inherit;
-		padding: 0;
-		margin: 0;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+		letter-spacing: 1.4px;
+		text-transform: uppercase;
+		padding: 0em;
+		margin: 0em;
 	}
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.scss";
 import FakeButton from "../../common/Button/FakeButton";
-import IconeMail from "../../common/Icones/Mail/Mail";
 
 const Footer: React.FC = () => {
 	return (

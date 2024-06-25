@@ -1,0 +1,32 @@
+.navBtn {
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+	height: 60px;
+	padding: 0;
+	width: 60px;
+	z-index: 91;
+	position: relative;
+}
+.navBtn__svg {
+	fill: var(--color-primary);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: opacity 0.3s;
+	cursor: pointer;
+
+	path {
+		cursor: pointer;
+	}
+}
+
+body[data-menu] .navBtn__svg {
+	fill: var(--color-on-background);
+}
+
+@media screen and (min-width: 1400px) {
+	.navBtn {
+		display: none;
+	}
+}

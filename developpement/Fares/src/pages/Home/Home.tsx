@@ -1,13 +1,16 @@
 import React from "react";
 import "./Home.scss";
-import FakeButton from "../../components/common/Button/FakeButton";
+
+import Header from "../../components/layout/Header/Header";
 
 function Home(): React.ReactElement {
 	return (
-		<section>
-			<h1>Welcome to Home Page</h1>
-			<FakeButton label="Faire un don" href="#" icon="👋" />
-		</section>
+		<>
+			<Header />
+			<section>
+				<h1>Welcome to Home Page</h1>
+			</section>
+		</>
 	);
 }
 

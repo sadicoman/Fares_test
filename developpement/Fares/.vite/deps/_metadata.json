@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "hash": "42f4f93b",
   "configHash": "6d926476",
   "lockfileHash": "cc390871",
@@ -31,4 +32,12 @@
       "file": "chunk-BUSYA2B4.js"
     }
   }
+=======
+  "hash": "0fd54f3c",
+  "configHash": "6d926476",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "093ff129",
+  "optimized": {},
+  "chunks": {}
+>>>>>>> Stashed changes
 }

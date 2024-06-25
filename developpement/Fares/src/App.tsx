@@ -1,3 +1,4 @@
+import React from "react";
 import "./_normalize.scss";
 import "./App.scss";
 

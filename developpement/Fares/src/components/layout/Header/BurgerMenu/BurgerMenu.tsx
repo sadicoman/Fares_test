@@ -1,4 +1,4 @@
-import { useRef, forwardRef } from "react";
+import React, { useRef, forwardRef } from "react";
 import gsap from "gsap";
 import { useMenu } from "../MenuContext";
 import "./BurgerMenu.scss";

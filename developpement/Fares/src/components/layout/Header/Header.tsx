@@ -13,11 +13,27 @@ const Header: React.FC = () => {
 	return (
 		<div className="container__header" ref={headerRef}>
 			<header className="header">
-				<a className="lien" href="#">
-					<img ref={logoRef} className="logo" src="assets/img/logo.svg" alt="Logo" />
-				</a>
-				<BurgerMenu ref={burgerMenuRef} />
-				<Navbar ref={navRef} />
+				<div className="header__topNav">
+					<ul className="topNav">
+						<li className="topNav__el">
+							<a className="topNav__lien" href="#">
+								Offres d’emploi
+							</a>
+						</li>
+						<li className="topNav__el">
+							<a className="topNav__lien" href="#">
+								Espace membre
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div className="header__nav">
+					<a className="lien" href="#">
+						<img ref={logoRef} className="logo" src="assets/img/logo.svg" alt="Logo" />
+					</a>
+					<BurgerMenu ref={burgerMenuRef} />
+					<Navbar ref={navRef} />
+				</div>
 			</header>
 		</div>
 	);

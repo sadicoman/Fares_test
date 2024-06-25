@@ -2,4 +2,14 @@
 .container {
 	display: flex;
 	flex-direction: column;
+	margin-top: 38px;
+	padding-top: 32px;
+}
+
+.resource-card-container {
+	display: flex;
+	gap: 72px;
+	flex-direction: column;
+	width: fit-content;
+	margin-top: 67px;
 }

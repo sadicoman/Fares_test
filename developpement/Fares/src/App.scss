@@ -6,3 +6,86 @@
 	color: var(--color-on-background);
 	background-color: var(--color-background);
 }
+
+.title {
+	color: #303032;
+	font-family: var(--font-title);
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110%;
+	margin-bottom: 36px;
+
+	&--color {
+		padding-top: 9px;
+		font-family: var(--font-title);
+		font-size: 80px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 90%;
+		display: block;
+		background: linear-gradient(90deg, #e4032e 13.48%, #9f9fef 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&--niveau2 {
+		color: #252526;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 110%;
+	}
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.section {
+	margin-top: 83px;
+	padding: 0px 48px;
+
+	&--deco {
+		background-image: url("assets/img/deco.svg");
+		background-repeat: no-repeat;
+		background-size: 95%;
+	}
+
+	&--ressources {
+		border-radius: 32px;
+		background: #fce6ea;
+		// padding: 125px 168px 0 168px;
+		padding: 128px 48px 0 48px;
+
+		background-image: url("assets/img/ruche.png");
+		background-repeat: no-repeat;
+		// background-position: 100% -30%;
+		background-position: 100% -2%;
+		background-size: 70%;
+
+		margin-bottom: 10rem;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		p {
+			color: #58585a;
+			font-family: "Inter", sans-serif;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 180%; /* 32.4px */
+		}
+	}
+}
+.background {
+	&--poly {
+		background-image: url("assets/img/polygone.svg");
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+}

@@ -320,7 +320,7 @@ function Home(): React.ReactElement {
 							text="Vivamus metus nisl, tristique et justo pulvinar, congue auctor justo."
 							button1Label="Tuberculose"
 							button1Href="#"
-							button1Icon={<FlecheBlanche />}
+							button1Icon={<FlecheRouge />}
 							button1ClassName="btn__fake--troisieme"
 							button2ClassName="btn__fake--troisieme"
 							button2Label="Tabagisme"

@@ -53,6 +53,7 @@
 		line-height: 160%;
 		background: inherit;
 		padding: 10px 16px;
+		text-transform: inherit;
 
 		&:hover {
 			background-color: #ece1e1;
@@ -64,6 +65,7 @@
 		font-weight: 300;
 		line-height: 160%;
 		padding: 10px 16px;
+		text-transform: inherit;
 	}
 
 	&--footer {
@@ -87,5 +89,9 @@
 	&--blanc {
 		background: #fff;
 		color: #303032;
+
+		&:hover {
+			background-color: #e0cace;
+		}
 	}
 }

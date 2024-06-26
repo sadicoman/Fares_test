@@ -57,7 +57,22 @@
 	}
 	.header {
 		justify-content: normal;
-		gap: 40px;
+		// gap: 40px;
 		margin: 0;
+	}
+	.header__nav {
+		margin: 0;
+		padding: 0;
+		padding-top: 22px;
+	}
+	.header__topNav {
+		align-self: end;
+		width: 100%;
+	}
+	.social-logos {
+		display: flex;
+	}
+	.footer .logo {
+		width: 280px !important;
 	}
 }

@@ -1,7 +1,6 @@
 .footer {
 	.logo {
-		width: 280px;
-		height: 109px;
+		width: 5em;
 	}
 }
 
@@ -91,4 +90,11 @@
 
 .legal-section--souligner {
 	text-decoration-line: underline;
+}
+
+@media screen and (min-width: 1400px) {
+	.legal-section li:not(:first-child):not(:last-child) {
+		border-right: 1.4px solid black;
+		padding-right: 5px;
+	}
 }

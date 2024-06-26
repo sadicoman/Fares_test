@@ -30,8 +30,6 @@ const Hexagon: React.FC<HexagonProps> = ({
 				<svg
 					className="svg"
 					xmlns="http://www.w3.org/2000/svg"
-					width="520"
-					height="574"
 					fill="none"
 					viewBox="0 0 520 574"
 				>
@@ -76,8 +74,6 @@ const Hexagon: React.FC<HexagonProps> = ({
 				<svg
 					className="svg svg--blanc"
 					xmlns="http://www.w3.org/2000/svg"
-					width="472"
-					height="526"
 					fill="none"
 					viewBox="0 0 472 526"
 				>

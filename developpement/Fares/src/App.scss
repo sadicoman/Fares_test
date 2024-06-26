@@ -1,5 +1,6 @@
 // App.scss
 .body {
+	width: fit-content;
 	font-family: var(--font-text);
 	font-size: 18px;
 	line-height: 1.5;
@@ -23,7 +24,6 @@
 		font-style: normal;
 		font-weight: 700;
 		line-height: 90%;
-		display: block;
 		background: linear-gradient(90deg, #e4032e 13.48%, #9f9fef 100%);
 		background-clip: text;
 		-webkit-background-clip: text;
@@ -95,7 +95,7 @@
 			width: 300px;
 			// height: 115px;
 			position: absolute;
-			left: 0px;
+			right: 290px;
 			z-index: -1;
 		}
 
@@ -106,7 +106,7 @@
 			// height: 115px;
 			position: absolute;
 			bottom: 0px;
-			left: 0px;
+			right: 450px;
 			z-index: -1;
 		}
 	}
@@ -120,6 +120,9 @@
 }
 
 @media screen and (min-width: 1400px) {
+	.body {
+		width: 100%;
+	}
 	.footer {
 		padding-top: 134px;
 		margin: auto;
@@ -142,7 +145,7 @@
 			.container {
 				flex-direction: row;
 				justify-content: space-evenly;
-				gap: 81px;
+				gap: 162px;
 			}
 		}
 
@@ -154,6 +157,8 @@
 			align-items: inherit;
 			padding: 125px 168px;
 			height: 729px;
+			background-position: 116% -58%;
+
 			p {
 				width: 462px;
 			}
@@ -176,7 +181,17 @@
 
 		&--actualites {
 			align-items: inherit;
-			padding-top: 168px;
+			padding-top: 300px;
+			overflow: inherit;
+			&::before {
+				bottom: 380px;
+				left: 763px;
+				right: inherit;
+			}
+			&::after {
+				top: 656px;
+				right: 1336px;
+			}
 
 			.title--niveau2 {
 				width: 532px;
@@ -201,16 +216,5 @@
 				gap: 5px;
 			}
 		}
-	}
-	.section--actualites::after {
-		bottom: -50px;
-		left: 0px;
-		width: inherit;
-	}
-	.section--actualites::before {
-		width: inherit;
-		right: 0px;
-		left: inherit;
-		bottom: 113px;
 	}
 }

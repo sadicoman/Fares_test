@@ -1,7 +1,9 @@
 .menu {
 	display: none;
 }
-
+body[data-menu] .background--poly {
+	position: relative;
+}
 body[data-menu] .menu {
 	display: flex;
 	height: 100%;

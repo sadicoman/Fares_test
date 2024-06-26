@@ -64,16 +64,16 @@ const Footer: React.FC = () => {
 				<p className="copyright">© FARES ASBL</p>
 				<ul>
 					<li className="legal-section--souligner">
-						<a href="#">mentions légales</a> |
+						<a href="#">mentions légales</a>
 					</li>
 					<li className="legal-section--souligner">
-						<a href="#">En savoir plus sur notre politique vie privée et cookies</a> |
-					</li>{" "}
-					<li>
-						<a href="#">Privacy Policy</a> |
+						<a href="#">En savoir plus sur notre politique vie privée et cookies</a>
 					</li>
 					<li>
-						<a href="#">Cookie</a> |{" "}
+						<a href="#">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="#">Cookie</a>
 					</li>
 					<li>
 						<a href="#">Sitemap</a>

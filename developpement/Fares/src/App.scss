@@ -28,6 +28,7 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		width: inherit;
 	}
 
 	&--niveau2 {
@@ -48,9 +49,22 @@
 	padding: 0px 48px;
 
 	&--deco {
-		background-image: url("assets/img/deco.svg");
-		background-repeat: no-repeat;
-		background-size: 95%;
+		// background-image: url("assets/img/deco.svg");
+		// background-repeat: no-repeat;
+		// background-size: 95%;
+		position: relative;
+
+		.deco__svg {
+			width: 100%;
+			position: absolute;
+			z-index: 0;
+			right: 60px;
+		}
+
+		.title,
+		.text {
+			position: relative;
+		}
 	}
 
 	&--ressources {
@@ -138,7 +152,7 @@
 		&--deco {
 			background-size: 100%;
 
-			p {
+			.text {
 				max-width: 681px;
 			}
 

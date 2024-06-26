@@ -59,6 +59,7 @@
 			position: absolute;
 			z-index: 0;
 			right: 60px;
+			overflow: visible;
 		}
 
 		.title,
@@ -71,20 +72,36 @@
 		border-radius: 32px;
 		background: #fce6ea;
 		// padding: 125px 168px 0 168px;
-		padding: 128px 48px 0 48px;
+		padding: 0px 48px 0 48px;
+		position: relative;
+		overflow: hidden;
+		height: 900px;
+		// overflow-x: hidden;
 
-		background-image: url("assets/img/ruche.png");
-		background-repeat: no-repeat;
-		// background-position: 100% -30%;
-		background-position: 100% -2%;
-		background-size: 70%;
+		// background-image: url("assets/img/ruche.png");
+		// background-repeat: no-repeat;
+		// // background-position: 100% -30%;
+		// background-position: 100% -2%;
+		// background-size: 70%;
 
 		margin-bottom: 10rem;
 
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
+		// flex-direction: column;
+
+		.ressources__svg {
+			// width: 100%;
+			position: absolute;
+			z-index: 0;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+		}
+		.ressources--title {
+			position: relative;
+		}
 
 		p {
 			color: #58585a;
@@ -102,6 +119,7 @@
 		flex-direction: column;
 		position: relative;
 		overflow: hidden;
+		top: 600px;
 
 		&::before {
 			content: url(assets/img/deco-actualites-2.svg);
@@ -133,12 +151,24 @@
 	}
 }
 
+.footer {
+	position: relative;
+	top: 640px;
+}
+
+@media screen and (max-width: 1400px) {
+	.section .section--actualites,
+	.ssection .section--ressources {
+		overflow: hidden;
+	}
+}
+
 @media screen and (min-width: 1400px) {
 	.body {
 		width: 100%;
 	}
 	.footer {
-		padding-top: 134px;
+		padding-top: 174px;
 		margin: auto;
 		max-width: 1280px;
 	}
@@ -173,6 +203,13 @@
 			height: 729px;
 			background-position: 116% -58%;
 
+			// overflow: inherit;
+
+			.ressources__svg {
+				bottom: 270px;
+				left: 707px;
+				width: 80%;
+			}
 			p {
 				width: 462px;
 			}
@@ -186,25 +223,21 @@
 			.resource-card__content {
 				width: inherit;
 			}
-			.ResourceCard--bas {
-				top: 100px;
-				left: 550px;
-				position: absolute;
-			}
 		}
 
 		&--actualites {
 			align-items: inherit;
-			padding-top: 300px;
+			margin-top: 300px;
 			overflow: inherit;
+			top: 150px;
 			&::before {
 				bottom: 380px;
 				left: 763px;
 				right: inherit;
 			}
 			&::after {
-				top: 656px;
-				right: 1336px;
+				top: 365px;
+				right: 1330px;
 			}
 
 			.title--niveau2 {
@@ -220,6 +253,7 @@
 		}
 	}
 	.footer {
+		top: 200px;
 		.contact-social {
 			display: flex;
 			gap: 83px;
@@ -230,5 +264,12 @@
 				gap: 5px;
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.section .section--actualites,
+	.ssection .section--ressources {
+		overflow: hidden;
 	}
 }

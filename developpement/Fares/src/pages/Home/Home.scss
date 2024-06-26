@@ -6,16 +6,33 @@
 	padding-top: 32px;
 }
 
+.ressources__container {
+	position: relative;
+}
+
 .resource-card-container {
 	display: flex;
 	gap: 72px;
 	flex-direction: column;
 	width: fit-content;
 	margin-top: 67px;
-	position: relative;
-	top: 60px;
+	position: absolute;
+	top: 300px;
+	left: 10%;
 }
 
 .ressources--title {
 	padding-top: 125px;
+}
+
+@media screen and (min-width: 1400px) {
+	.resource-card-container {
+		top: 460px;
+		left: 310px;
+	}
+	.ResourceCard--bas {
+		top: 100px;
+		left: 550px;
+		position: absolute;
+	}
 }

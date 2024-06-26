@@ -36,3 +36,9 @@
 		position: absolute;
 	}
 }
+
+@media screen and (min-width: 2000px) {
+	.resource-card-container {
+		left: 630px;
+	}
+}

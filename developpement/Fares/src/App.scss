@@ -7,7 +7,10 @@
 	color: var(--color-on-background);
 	background-color: var(--color-background);
 }
-
+.logo,
+.social-logos img {
+	cursor: pointer;
+}
 .title {
 	color: #303032;
 	font-family: var(--font-title);
@@ -156,6 +159,21 @@
 	top: 640px;
 }
 
+@media screen and (min-width: 760px) {
+	// .section {
+	// 	&--deco {
+	// 		.container {
+	// 			flex-direction: row;
+	// 			justify-content: space-evenly;
+	// 			gap: 162px;
+	// 		}
+	// 	}
+	// }
+	// .hexagon:not(.blanc) .svg:not(.svg--blanc) {
+	// 	display: block;
+	// }
+}
+
 @media screen and (max-width: 1400px) {
 	.section .section--actualites,
 	.ssection .section--ressources {
@@ -166,6 +184,7 @@
 @media screen and (min-width: 1400px) {
 	.body {
 		width: 100%;
+		overflow-x: hidden;
 	}
 	.footer {
 		padding-top: 174px;

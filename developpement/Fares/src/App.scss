@@ -8,8 +8,13 @@
 	background-color: var(--color-background);
 }
 .logo,
-.social-logos img {
-	cursor: pointer;
+.social-logos {
+	display: flex;
+	gap: 10px;
+
+	img {
+		cursor: pointer;
+	}
 }
 .title {
 	color: #303032;
@@ -75,7 +80,8 @@
 		border-radius: 32px;
 		background: #fce6ea;
 		// padding: 125px 168px 0 168px;
-		padding: 0px 48px 0 48px;
+		// padding: 0px 48px 0 48px;
+		padding: 0px 48px 450px 48px;
 		position: relative;
 		overflow: hidden;
 		height: 900px;
@@ -87,7 +93,8 @@
 		// background-position: 100% -2%;
 		// background-size: 70%;
 
-		margin-bottom: 10rem;
+		margin-bottom: 14rem;
+		margin-top: 20px;
 
 		// display: flex;
 		// align-items: center;
@@ -122,7 +129,7 @@
 		flex-direction: column;
 		position: relative;
 		overflow: hidden;
-		top: 600px;
+		// top: 600px;
 
 		&::before {
 			content: url(assets/img/deco-actualites-2.svg);
@@ -130,7 +137,8 @@
 			width: 300px;
 			// height: 115px;
 			position: absolute;
-			right: 290px;
+			right: 350px;
+			top: 130px;
 			z-index: -1;
 		}
 
@@ -156,7 +164,7 @@
 
 .footer {
 	position: relative;
-	top: 640px;
+	top: 100px;
 }
 
 @media screen and (min-width: 760px) {

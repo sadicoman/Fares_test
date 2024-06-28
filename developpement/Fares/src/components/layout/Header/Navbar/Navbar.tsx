@@ -3,6 +3,8 @@ import "./Navbar.scss";
 import { useMenu } from "../MenuContext";
 import FakeButton from "../../../common/Button/FakeButton";
 
+import gsap from "gsap";
+
 type NavItem = {
 	name: string;
 	link: string;
@@ -24,14 +26,14 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
 
 	useEffect(() => {
 		if (combinedRef.current && isMenuVisible) {
-			// const elems = combinedRef.current.querySelectorAll("li");
-			// // gsap.fromTo(
-			// // 	elems,
-			// // 	{ opacity: 0, x: 50 },
-			// // 	{ opacity: 1, x: 0, stagger: 0.1, duration: 0.5, ease: "power2.out" },
-			// // );
+			const elems = combinedRef.current.querySelectorAll("li");
+			gsap.fromTo(
+				elems,
+				{ opacity: 0, scale: 0.25 },
+				{ opacity: 1, scale: 1, stagger: 0.1, duration: 0.5, ease: "power2.out" },
+			);
 		}
-	}, [isMenuVisible, combinedRef]); // Inclusion de `combinedRef` dans les dépendances de `useEffect`
+	}, [isMenuVisible, combinedRef]);
 
 	return (
 		<nav className="menu" ref={combinedRef}>

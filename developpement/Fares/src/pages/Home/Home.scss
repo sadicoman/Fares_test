@@ -8,6 +8,8 @@
 
 .ressources__container {
 	position: relative;
+	display: flex;
+	justify-content: center;
 }
 
 .resource-card-container {
@@ -18,7 +20,7 @@
 	margin-top: 67px;
 	position: absolute;
 	top: 300px;
-	left: 10%;
+	// left: 10%;u
 }
 
 .ressources--title {

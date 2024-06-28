@@ -1,29 +1,37 @@
 .menu {
 	display: none;
 }
-body[data-menu] .background--poly {
-	position: relative;
-}
-body[data-menu] .menu {
-	display: flex;
-	height: 100%;
-	overflow-y: scroll;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 100%;
-	z-index: 90;
-	background-color: #fff;
-	background-image: url("assets/img/polygone.svg");
-	background-repeat: no-repeat;
-	background-position: top right;
-	background-size: 90%;
-	flex-direction: column;
-}
+body[data-menu] {
+	.background--poly {
+		position: relative;
+	}
 
+	.menu {
+		display: flex;
+		height: 100%;
+		overflow-y: scroll;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 90;
+		background-color: #fff;
+		background-image: url("assets/img/polygone.svg");
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: 90%;
+		flex-direction: column;
+	}
+	.ressources__container,
+	.section--ressources,
+	.section--actualites,
+	.footer {
+		display: none;
+	}
+}
 .menu__liste {
 	list-style: none;
-	margin-top: 5rem;
+	margin-top: 10rem;
 	padding: 1.5rem;
 	text-align: center;
 	height: 100%;
@@ -54,6 +62,7 @@ body[data-menu] .menu {
 	&--btn {
 		display: flex;
 		justify-content: center;
+		margin-top: 20px;
 	}
 }
 
@@ -65,7 +74,7 @@ body[data-menu] .menu {
 	display: inline-block;
 	padding: 1em;
 	margin: 0.5em;
-	font-size: 18px;
+	font-size: 24px;
 	transition: all 400ms cubic-bezier(0, 0.995, 0.99, 1);
 }
 

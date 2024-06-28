@@ -53,7 +53,6 @@ body[data-menu] {
 	text-align: center;
 
 	&--actif {
-		background-color: var(--color-background);
 		.menu__lien {
 			color: var(--color-primary);
 		}

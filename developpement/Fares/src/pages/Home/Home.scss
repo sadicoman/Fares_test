@@ -28,6 +28,10 @@
 }
 
 @media screen and (min-width: 1400px) {
+	.ressources__container {
+		display: inherit;
+		justify-content: inherit;
+	}
 	.resource-card-container {
 		top: 460px;
 		left: 310px;

@@ -1,4 +1,5 @@
 .resource-card {
+	position: relative;
 	display: flex;
 	width: fit-content;
 	padding: 60px;
@@ -42,6 +43,7 @@
 	font-weight: 600;
 	line-height: 110%;
 }
+
 .resource-card__text {
 	color: #252526;
 	text-align: center;
@@ -51,37 +53,29 @@
 	font-weight: 300;
 	line-height: 160%; /* 25.6px */
 }
+
 .resource-card__buttons {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	gap: 16px;
 	width: 100%;
 }
-
-.decorated-element {
+.decorated-element,
+.decorated-element-2 {
 	position: relative;
+}
 
-	&::after {
-		content: url("../assets/img/deco-dpcimentation-1.png");
-		display: block;
-		width: 279px;
-		height: 115px;
-		position: absolute;
-		bottom: 80px;
-		right: -55px;
-	}
+.svg-container {
+	position: absolute;
+	bottom: 80px;
+	right: -55px;
+	width: 279px;
+	height: 115px;
 }
 
 .decorated-element-2 {
-	position: relative;
-
-	&::after {
-		content: url("../assets/img/deco-dpcimentation-2.png");
-		display: block;
-		width: 279px;
-		height: 115px;
-		position: absolute;
-		bottom: 68px;
-		right: -25px;
+	.svg-container {
+		bottom: 60px;
+		right: -80px;
 	}
 }

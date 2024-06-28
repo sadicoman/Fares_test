@@ -11,6 +11,8 @@ import FlecheRouge from "../../components/common/Fleche/FlecheRouge";
 import ActualitesCard from "../../components/common/Card/ActualitesCard/ActualitesCard";
 import FakeButton from "../../components/common/Button/FakeButton";
 import Footer from "../../components/layout/Footer/Footer";
+import DecoDocumentation1 from "../../components/common/Icones/DecoDocumentation/DecoDocumentation1";
+import DecoDocumentation2 from "../../components/common/Icones/DecoDocumentation/DecoDocumentation2";
 
 function Home(): React.ReactElement {
 	useEffect(() => {
@@ -309,6 +311,7 @@ function Home(): React.ReactElement {
 							button2Label="Tabagisme"
 							button2Href="#"
 							button2Icon={<FlecheRouge />}
+							svgElement={<DecoDocumentation1 />}
 						/>
 					</div>
 					<div className="ResourceCard--bas">
@@ -326,6 +329,7 @@ function Home(): React.ReactElement {
 							button2Label="Tabagisme"
 							button2Href="#"
 							button2Icon={<FlecheRouge />}
+							svgElement={<DecoDocumentation2 />}
 						/>
 					</div>
 				</div>
